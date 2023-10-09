@@ -3,12 +3,12 @@ from gpt.service import call_chatgpd
 
 
 astic_key = 'XXX'
+visionParams = 'gpt_detailed,describe'
 chatgpd_key = 'XXX'
 chatgpd_model = 'gpt-4'
 image = 'https://i.ibb.co/VJJ9rr9/image-G2d-MH0-Kg-Uk-WTFqp9lv-Ot-Fg.jpg'
 
-image_result = get_prompt_image(asticaAPI_key=astic_key, httpsImage=image)
-
+image_result = get_prompt_image(asticaAPI_key=astic_key, httpsImage=image, visionParams=visionParams)
 
 ####CONTEXT CHATGPD RESULT FINAL
 

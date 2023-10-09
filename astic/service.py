@@ -11,7 +11,7 @@ def asticaAPI(endpoint, payload, timeout):
         return {'status': 'error', 'error': 'Failed to connect to the API.'}
 
 
-def get_prompt_image(asticaAPI_key: str, httpsImage: str):
+def get_prompt_image(asticaAPI_key: str, httpsImage: str, visionParams: str):
     # API configurations
     asticaAPI_key = asticaAPI_key
     asticaAPI_timeout = 60 # in seconds. "gpt" or "gpt_detailed" require increased timeouts
@@ -21,7 +21,7 @@ def get_prompt_image(asticaAPI_key: str, httpsImage: str):
     asticaAPI_input = httpsImage # use https image input (faster)
 
     # vision parameters:  https://astica.ai/vision/documentation/#parameters
-    asticaAPI_visionParams = 'gpt_detailed,describe'  # comma separated, defaults to "all". 
+    asticaAPI_visionParams = visionParams  # comma separated, defaults to "all". 
     asticaAPI_gpt_prompt = '' # only used if visionParams includes "gpt" or "gpt_detailed"
     asticaAPI_prompt_length = '150' # number of words in GPT response
 
