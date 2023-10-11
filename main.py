@@ -19,3 +19,12 @@ chat_messages.append({"role": "user", "content": f'Generate a report based on th
 final_result = call_chatgpd(api_key=chatgpd_key, model=chatgpd_model, chat_messages=chat_messages)
 
 print(final_result)
+
+
+"""
+
+A imagem retrata uma sacola plástica cheia de resíduos, com nível de confiança de aproximadamente 76,94%. 
+O saco plástico, possivelmente feito de polietileno ou material semelhante, parece estar bastante cheio de vários itens de lixo, 
+indicando que foi utilizado em sua capacidade máxima.
+
+"""
